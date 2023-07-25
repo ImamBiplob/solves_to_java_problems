@@ -1,0 +1,49 @@
+Task
+
+1. Create a class called Shape with a method calculateArea() that calculates and returns the area of the shape. Then, create two subclasses Rectangle and Circle that inherit from Shape and override the calculateArea() method to provide their specific area calculations. Finally, write a program to demonstrate polymorphism by creating an array of Shape objects containing both rectangles and circles, and print their areas.
+
+2. Create a class called BankAccount with private instance variables accountNumber, balance, and accountHolder. Implement public getter and setter methods for each variable to provide encapsulation. Additionally, add a method deposit(double amount) that adds the specified amount to the account balance and a method withdraw(double amount) that deducts the given amount from the balance, but only if the balance is sufficient. Test the BankAccount class by performing some deposit and withdrawal operations.
+
+3. Create an abstract class Animal with an abstract method makeSound(). Then, create two classes Dog and Cat that extend Animal and implement the makeSound() method accordingly. Next, define an interface Swim with a method swim(). Make the Dog class implement the Swim interface. Finally, create instances of Dog and Cat and demonstrate their different sounds and swimming abilities.
+
+4. Create a class called Employee with instance variables name, employeeId, and department. Implement multiple constructors to accommodate different ways of creating an Employee object. For example, you could have a constructor that takes only the name and employeeId, another that takes all three parameters, and one that takes just the name and sets the department to a default value. Demonstrate constructor overloading and chaining by creating various Employee objects using different constructors.
+
+5. Create a class called Vehicle with a method displayInfo() that prints "I am a vehicle." Then, create a subclass called Car that extends Vehicle and overrides the displayInfo() method to print "I am a car." In the Car class, use the super keyword to call the displayInfo() method of the Vehicle class. Create an object of the Car class and call the displayInfo() method to observe the output.
+
+6. Design a class called Author with instance variables name, age, and gender. Then, create a class called Book with instance variables title, year, and an Author object to represent the book's author. Implement a method in the Book class to display the book details, including the author's information. Create instances of Author and Book and demonstrate how composition allows a book object to contain an author object.
+
+7. Define an interface called Printable with methods print() and scan(). Then, create two classes Printer and Scanner that implement the Printable interface. Next, create a class AllInOnePrinter that implements both Printable and Scan interfaces. Discuss how this design violates the Interface Segregation Principle and propose a better design to adhere to the principle.
+
+8. Write a Java method called findMax that can find the maximum value from an array of integers. The method should be overloaded to handle different data types, such as double and long. Additionally, create another version of the findMax method that uses varargs to find the maximum value from a variable number of integer arguments. Provide examples of calling these methods with sample data.
+
+9. Explain the differences between an abstract class and an interface in Java. Illustrate when it is appropriate to use an abstract class and when to use an interface in a given scenario. Provide practical examples to support your explanation.
+
+10. Create a base class Parent with a static method displayInfo() that prints "Static method in Parent class." Then, create a subclass Child that extends Parent and defines a static method displayInfo() that prints "Static method in Child class." Also, provide an instance method showInfo() in both classes that prints "Instance method in Parent/Child class." Create instances of both Parent and Child classes and call the static and instance methods. Explain the concept of method hiding and method overriding in Java.
+
+11. Design a class called University that contains an inner static class Department. The Department class should have a name and an array of course names offered by that department. Demonstrate how to create instances of the Department class and associate them with the University class.
+
+12. Create a class Person with instance variables name and age. Write a parameterized constructor to initialize these variables. Within the constructor, use the this keyword to distinguish between the instance variables and the constructor parameters. Demonstrate the use of the this keyword by creating an object of the Person class and displaying the person's name and age.
+
+13. Design a class called Calculator with a method divide(int dividend, int divisor) that divides two integers and returns the result. Handle the ArithmeticException that may occur when the divisor is zero and throw a custom exception DivideByZeroException with an appropriate error message. Create a program to demonstrate how to use this Calculator class and handle the custom exception when dividing by zero.
+
+14. Create an immutable class called ImmutablePoint that represents a 2D point with x and y coordinates. Ensure that the class does not provide any mutator methods and that all instance variables are final. Write a constructor to initialize the ImmutablePoint object, and provide methods to access the x and y coordinates. Demonstrate the immutability of the class by creating an ImmutablePoint object and attempting to modify its state.
+
+15. Define an interface called Greeting with a method sayHello(). Create a method called greet() that accepts an object of the Greeting interface and calls its sayHello() method. Demonstrate the use of an anonymous inner class to implement the Greeting interface and pass it to the greet() method in the form of an anonymous object.
+
+16. Create an enum called DayOfWeek to represent the days of the week (e.g., SUNDAY, MONDAY, ...). Add a method to the enum that returns the number of working days (Monday to Friday) in a given week. Demonstrate the usage of the DayOfWeek enum by obtaining the number of working days for a sample week.
+
+17. Implement the Cloneable interface in a class called Person that has instance variables name and age. Override the clone() method to perform a deep copy of the Person object. Create two Person objects, clone one of them, and demonstrate that the cloned object is an independent copy.
+
+18. Create a class called Student with instance variables name and studentId. Override the equals() and hashCode() methods in the Student class to enable proper comparison of Student objects based on their studentId. Create a list of Student objects and demonstrate how to check if a given Student object exists in the list using the equals() method.
+
+19. Implement a functional interface Calculator with a single method int calculate(int a, int b). Then, create a class called Arithmetic with static methods add(int a, int b) and subtract(int a, int b), which perform addition and subtraction, respectively. Use method references to associate the Calculator functional interface with the appropriate methods in the Arithmetic class. Finally, demonstrate how to use the Calculator interface to perform addition and subtraction operations.
+
+20. Create a Java class called Employee that follows the JavaBean conventions (private instance variables, default constructor, getter and setter methods). Implement the Serializable interface to allow the Employee objects to be serialized. Write a program that creates an Employee object, sets its properties, serializes it to a file, then deserializes it back into a new Employee object, and finally prints its properties.
+
+21. Design a class Monitor with properties like resolution, refreshRate, and manufacturer. Then, create a class Computer that uses composition to include a Monitor object along with other properties like processor, RAM, etc. Next, design a class Laptop that extends the Computer class and inherits its properties, but additionally has properties like batteryCapacity and weight. Discuss the advantages of using composition over inheritance in this scenario.
+
+22. Create an interface StringOperation with a method int performOperation(String str). Then, write a class called StringUtils with a static method static int countVowels(String str) that returns the count of vowels in the given string. Use a method reference to associate the StringOperation interface with the countVowels method. Finally, demonstrate how to use the StringOperation interface to count the vowels in a sample string.
+
+23. Design a class called Person with properties name and age. Override the toString() method in the Person class to provide a custom string representation of the object (e.g., "Name: John, Age: 30"). Create instances of the Person class and observe the output when calling the toString() method.
+
+24. Explain the "Diamond Problem" in the context of multiple inheritance in Java and how it is resolved using interfaces. Provide an example with four classes: A, B, C, and D, where B and C both extend A, and D extends both B and C. Show how using interfaces helps avoid ambiguity in method resolution.
