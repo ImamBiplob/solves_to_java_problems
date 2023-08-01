@@ -5,21 +5,20 @@ interface Greeting {
 }
 
 class Task15 {
-    public static void main(String args[]) {
+    public static void main(String []args) {
 
-        Greeting greeting= new Greeting(){
-            public void sayHello(){
+        greet(new Greeting() {                             // Using Anonymous Inner Class
+            @Override
+            public void sayHello() {
                 System.out.println("Hello");
             }
-        };
-//        public void greet(Greeting greeting){
-//            greeting.sayHello();
-//        }
+        });
 
+        greet(() -> System.out.println("hello"));         // Using Lambda expression
 
+    }
+
+    public static void greet(Greeting greeting){
         greeting.sayHello();
-
-//        greet(greeting);
-
     }
 }

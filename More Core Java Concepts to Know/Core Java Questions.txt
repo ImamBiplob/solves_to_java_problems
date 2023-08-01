@@ -1,0 +1,279 @@
+ArrayList vs. LinkedList:
+Compare and contrast ArrayList and LinkedList in Java. Discuss their performance characteristics for common operations like insertion, deletion, and random access. Explain under which scenarios each data structure would be more suitable.
+
+HashSet vs. TreeSet:
+Explain the differences between HashSet and TreeSet in Java. Discuss the uniqueness and ordering of elements in each collection. Provide examples of when to use HashSet and when to use TreeSet.
+
+HashMap vs. HashTable:
+Compare and contrast HashMap and HashTable in Java. Discuss their thread-safety, usage of null keys and values, and performance considerations. Explain why HashMap is preferred in most scenarios.
+
+Iterator vs. ListIterator:
+Explain the difference between Iterator and ListIterator interfaces in Java. Discuss their capabilities, such as bi-directional iteration and modification of elements. Provide examples of when to use each iterator type.
+
+ConcurrentHashMap and ConcurrentLinkedQueue:
+Describe the purpose and usage of ConcurrentHashMap and ConcurrentLinkedQueue in Java's java.util.concurrent package. Explain how they support concurrent access and modifications from multiple threads.
+
+Collections.synchronizedList vs. CopyOnWriteArrayList:
+Discuss the differences between Collections.synchronizedList and CopyOnWriteArrayList in Java. Compare their thread-safety mechanisms and performance characteristics. Explain when to use one over the other.
+
+Sorting and Searching in Collections:
+Write a Java program to demonstrate sorting and searching operations on a collection of objects. Use either ArrayList or LinkedList to store custom objects, and sort them based on a specific property using Collections.sort(). Then, perform a search using Collections.binarySearch().
+
+Custom Comparator and Comparable:
+Design a class called Book with properties title, author, and price. Implement the Comparable interface to allow sorting of Book objects based on their prices. Additionally, create a custom Comparator to sort Book objects based on their titles in a case-insensitive manner. Write a program to demonstrate both sorting methods.
+
+LinkedHashMap:
+Explain the purpose of LinkedHashMap in Java. Discuss how it maintains the insertion order of elements and how it differs from HashMap. Provide an example of when to use LinkedHashMap and how it preserves the order of keys and values.
+
+Stack and Queue Implementations:
+Implement a basic Stack and Queue using the LinkedList class in Java. Add methods to push, pop, and peek elements in the stack, and enqueue and dequeue elements in the queue. Demonstrate the usage of these custom implementations.
+
+Abstraction Concepts:
+Define abstraction in the context of object-oriented programming. Explain why abstraction is important and how it helps in managing complexity in software development. Provide examples of abstraction in Java.
+
+Abstract Classes:
+Create an abstract class called Shape with an abstract method calculateArea(). Then, create two subclasses Rectangle and Circle that extend Shape and implement the calculateArea() method to provide their specific area calculations. Finally, write a program to demonstrate the concept of abstraction by using objects of the Rectangle and Circle classes.
+
+Interfaces and Abstraction:
+Define an interface called Animal with a method makeSound(). Implement two classes Dog and Cat that implement the Animal interface and provide their respective implementations of the makeSound() method. Demonstrate abstraction by using objects of the Dog and Cat classes.
+
+Real-Life Use of Abstraction:
+Provide a real-life analogy to explain abstraction in a non-programming context. For example, you could use the analogy of a television remote control, where users interact with the remote to perform actions without needing to know the internal workings of the TV.
+
+Abstraction vs. Encapsulation:
+Explain the difference between abstraction and encapsulation in Java. Discuss how they are related but serve different purposes in the context of object-oriented programming.
+
+Use of Abstract Methods in Interfaces:
+Create an interface Shape with two abstract methods calculateArea() and calculatePerimeter(). Implement the Shape interface in two classes: Circle and Square. Provide appropriate implementations for the abstract methods in each class. Write a program to demonstrate the use of the Shape interface and call the methods on objects of Circle and Square.
+
+Abstract Classes vs. Interfaces:
+Compare and contrast abstract classes and interfaces in Java. Explain the scenarios in which it is more appropriate to use abstract classes, and the scenarios where interfaces are more suitable.
+
+Benefits of Abstraction:
+Enumerate the advantages of using abstraction in software design. Discuss how abstraction promotes code reusability, extensibility, and maintenance.
+
+Polymorphism and Abstraction:
+Explain how abstraction is closely related to polymorphism in Java. Describe how polymorphism allows different classes to be treated uniformly through their common abstract superclass or interface.
+
+Abstract Classes and Constructors:
+Can an abstract class have a constructor? If yes, explain when and how an abstract class constructor can be used. If no, provide a reason why abstract classes cannot have constructors.
+
+Interface Basics:
+Define an interface called Vehicle with methods void start() and void stop(). Create a class called Car that implements the Vehicle interface and provides appropriate implementations for the methods. Demonstrate the usage of the Car class to start and stop the car.
+
+Multiple Interface Implementation:
+Create two interfaces, Flyable and Swimmable, with methods void fly() and void swim(), respectively. Design a class called Duck that implements both Flyable and Swimmable. Provide appropriate implementations for the methods. Demonstrate the usage of the Duck class to fly and swim.
+
+Default Methods:
+Modify the Vehicle interface from the first question to include a default method void honk(). Provide a default implementation for the honk() method in the Vehicle interface. Create a class called Truck that implements the Vehicle interface but does not override the honk() method. Demonstrate how the default method is inherited and used in the Truck class.
+
+Static Methods in Interfaces:
+Add a static method void inspect() to the Vehicle interface from the previous questions. Provide an implementation for the inspect() method in the Vehicle interface. Demonstrate how to call the static method directly from the interface without creating an instance of a class that implements the interface.
+
+Inheritance and Interface:
+Create an interface called Shape with a method double getArea(). Then, create another interface called Colorable with a method void setColor(String color). Design a class called Square that implements both Shape and Colorable. Provide appropriate implementations for the methods. Demonstrate the usage of the Square class to calculate its area and set its color.
+
+Functional Interfaces and Lambda Expressions:
+Define a functional interface Calculator with a method int calculate(int a, int b). Use a lambda expression to create an instance of the Calculator interface that performs addition. Demonstrate how to use the lambda expression to calculate the sum of two numbers.
+
+Interface Inheritance:
+Create an interface called Drawable with a method void draw(). Then, create another interface called Resizable that extends Drawable and adds a method void resize(int width, int height). Design a class called Rectangle that implements Resizable. Provide appropriate implementations for the methods in the Rectangle class. Demonstrate the usage of the Rectangle class to draw and resize rectangles.
+
+Marker Interface:
+Define a marker interface Serializable with no methods. Explain the purpose of marker interfaces in Java and how they are used in certain scenarios, such as for enabling object serialization.
+
+Interface Default and Static Methods Conflict:
+Create an interface called MyInterface with a default method void myMethod() and a static method void staticMethod(). Then, create a class called MyClass that implements MyInterface and also defines its version of the staticMethod(). Demonstrate how to handle conflicts between default and static methods during class implementation.
+
+Functional Interfaces in JDK:
+Describe some of the commonly used functional interfaces available in the JDK's java.util.function package, such as Predicate, Function, Consumer, and Supplier. Provide examples of how each functional interface can be used with lambda expressions.
+
+Basic Inheritance:
+Create a class called Animal with properties name and age, along with a method makeSound() that prints a generic sound. Then, create two subclasses, Dog and Cat, that inherit from Animal. Override the makeSound() method in each subclass to print the respective sound of a dog and a cat. Create instances of Dog and Cat, and demonstrate how inheritance allows them to access properties and methods from the Animal class.
+
+Single Inheritance:
+Define a class Person with properties name and age, and a method introduce() that prints a greeting. Then, create a class Student that inherits from Person and adds a new property studentId. Override the introduce() method in the Student class to include the student's ID in the greeting. Create a Student object and demonstrate how it can access properties and methods from both Person and Student classes.
+
+Multilevel Inheritance:
+Create a class Vehicle with properties brand and year, along with a method void startEngine() that prints "Engine started." Then, create a subclass Car that inherits from Vehicle and adds a property model. Finally, create a subclass Sedan that inherits from Car and adds a property numDoors. Override the startEngine() method in the Car class to print "Car engine started," and in the Sedan class to print "Sedan engine started." Create a Sedan object and demonstrate how it can access properties and methods from all three classes.
+
+
+Hierarchical Inheritance:
+Design a class Shape with properties color and area, along with a method calculateArea() that calculates the area and stores it in the area property. Then, create two subclasses, Circle and Rectangle, that inherit from Shape. Each subclass should override the calculateArea() method to provide the specific area calculation for a circle and a rectangle. Create instances of Circle and Rectangle, and demonstrate how they can access properties and methods from the Shape class.
+
+Method Overriding and Super Keyword:
+Create a class Employee with properties name, employeeId, and salary. Then, create a subclass Manager that inherits from Employee and adds a property department. Override the toString() method in both classes to provide custom string representations of the objects. In the Manager class's toString() method, use the super keyword to call the toString() method of the Employee class and then add the department information. Create a Manager object and demonstrate how it can use the overridden toString() method.
+
+Constructors in Inheritance:
+Design a class Vehicle with a constructor that takes parameters brand and year, and initializes the respective properties. Then, create a subclass Car that inherits from Vehicle and adds a constructor that takes an additional parameter model. In the Car constructor, use the super keyword to call the constructor of the Vehicle class and pass the brand and year parameters. Create a Car object and demonstrate how constructors are used in inheritance.
+
+Abstract Classes and Inheritance:
+Create an abstract class Shape with an abstract method calculateArea(). Then, create two subclasses, Circle and Rectangle, that inherit from Shape. Implement the calculateArea() method in each subclass to provide the specific area calculation for a circle and a rectangle. Demonstrate how abstract classes and inheritance work together to provide a common structure for related classes.
+
+Constructors in Abstract Classes:
+Define an abstract class Animal with a constructor that takes a name parameter and initializes the name property. Create two subclasses, Dog and Cat, that inherit from Animal. In each subclass, create a constructor that takes the name parameter and passes it to the constructor of the Animal class using the super keyword. Create instances of Dog and Cat, and demonstrate how constructors in abstract classes are utilized.
+
+Polymorphism Concepts:
+Define polymorphism in Java and explain its significance in object-oriented programming. Differentiate between compile-time polymorphism and runtime polymorphism, providing examples of each.
+
+Method Overloading:
+Create a class called MathOperations with multiple methods named add that can perform addition for different data types (integers, doubles, etc.). Demonstrate how method overloading allows the MathOperations class to have multiple add methods with different parameter types.
+
+Method Overriding:
+Design a class called Shape with a method calculateArea() that returns the area of a shape. Create two subclasses, Rectangle and Circle, that inherit from Shape and override the calculateArea() method to provide the specific area calculations for a rectangle and a circle. Demonstrate how method overriding allows objects of the subclasses to invoke the appropriate version of calculateArea() at runtime.
+
+Runtime Polymorphism using Interfaces:
+Create an interface called Drawable with a method void draw(). Implement the Drawable interface in two classes, Rectangle and Circle, each providing its implementation of the draw() method. Write a program that creates an array of Drawable objects containing both Rectangle and Circle objects. Demonstrate how runtime polymorphism allows calling the draw() method on objects of different concrete classes through the common interface reference.
+
+Polymorphism with Inheritance:
+Create a base class Vehicle with a method void startEngine(). Then, create two subclasses, Car and Motorcycle, that inherit from Vehicle and override the startEngine() method to provide their respective engine startup behavior. Demonstrate how polymorphism enables calling the startEngine() method on different vehicle objects using a common base class reference.
+
+Polymorphism with Method Parameters:
+Design a class Calculator with a method int add(int a, int b) that returns the sum of two integers. Create another method double add(double a, double b) in the same class that returns the sum of two doubles. Write a program to demonstrate how polymorphism allows calling the appropriate add method based on the method parameters.
+
+Covariant Return Type:
+Define a class Vehicle with a method Vehicle getInstance() that returns a Vehicle object. Then, create a subclass Car that inherits from Vehicle and overrides the getInstance() method to return a Car object. Demonstrate how covariant return types enable the Car subclass to return a more specific type of object than its superclass.
+
+Dynamic Method Dispatch:
+Create a class Animal with a method void makeSound(). Implement two subclasses, Dog and Cat, that inherit from Animal and override the makeSound() method to provide the respective sounds of a dog and a cat. Write a program to demonstrate dynamic method dispatch by calling the makeSound() method on objects of the Dog and Cat classes using a loop.
+
+Encapsulation Basics:
+Define encapsulation in Java and explain its importance in object-oriented programming. Provide an example of how encapsulation is achieved by using private access modifiers for instance variables and public getter and setter methods.
+
+Getters and Setters:
+Create a class called Person with private instance variables name, age, and email. Implement public getter and setter methods for each variable. Demonstrate how encapsulation allows controlled access to the instance variables, ensuring proper data validation and abstraction.
+
+Immutable Class:
+Design an immutable class called ImmutablePoint that represents a 2D point with x and y coordinates. Ensure that the class does not provide any mutator methods and that all instance variables are final. Write a constructor to initialize the ImmutablePoint object, and provide methods to access the x and y coordinates. Demonstrate the immutability of the class by creating an ImmutablePoint object and attempting to modify its state.
+
+Access Modifiers and Encapsulation:
+Explain the role of access modifiers (public, protected, default, and private) in encapsulation. Describe how access modifiers control the visibility of classes, methods, and variables, and how they help maintain encapsulation and data hiding.
+
+Package Private Access:
+Create a package called com.example.shapes and include a class Circle and another class Square in it. Make the Circle class have a package-private access modifier (default access), and the Square class have a public access modifier. Discuss the impact of package-private access on encapsulation and how it restricts the visibility of the Circle class outside the package.
+
+Encapsulation and Data Hiding:
+Design a class BankAccount with private instance variables accountNumber, balance, and pin. Implement public methods for deposit, withdrawal, and balance inquiry that use proper data validation and encapsulation to protect sensitive data, such as the pin information.
+
+Constructor Access Control:
+Create a class Employee with private instance variables name and salary. Define a parameterized constructor that takes the name and salary as arguments. Then, design a factory method (a static method that returns an instance of the class) called createEmployee that ensures encapsulation by performing additional validation before creating and returning an Employee object.
+
+Encapsulation in Real-Life Scenario:
+Provide a real-life analogy to explain encapsulation in a non-programming context. For example, you could use the analogy of a mobile phone, where users interact with the phone through its interface (buttons, touch screen, etc.) without having direct access to its internal components.
+
+Wrapper Class Basics:
+Explain what wrapper classes are in Java and why they are used. Provide examples of primitive data types and their corresponding wrapper classes.
+
+Autoboxing and Unboxing:
+Define autoboxing and unboxing in Java. Write a code snippet that demonstrates autoboxing by automatically converting a primitive data type to its corresponding wrapper class, and unboxing by automatically converting a wrapper class object back to a primitive data type.
+
+Parsing and Wrapper Classes:
+Describe the role of wrapper classes in parsing strings to primitive data types and vice versa. Write a program that takes user input as a string and uses wrapper classes to convert the input to various primitive data types like int, double, and boolean.
+
+Wrapper Class Methods:
+Choose a wrapper class (e.g., Integer, Double, Character, etc.) and explain some of the useful methods available in that class. Demonstrate how to use these methods to perform common operations, such as converting between different number bases or finding the minimum and maximum values.
+
+Wrapper Classes in Collections:
+Describe how wrapper classes are commonly used in collections (e.g., ArrayList, LinkedList, etc.) to store primitive data types as objects. Write a program that uses a collection to store a list of integers (primitive data types) as Integer objects and demonstrates adding, removing, and iterating through the collection.
+
+Wrapper Class Constants:
+Provide examples of wrapper class constants, such as Integer.MAX_VALUE, Double.MIN_VALUE, etc. Explain how these constants are useful in certain scenarios, like setting initial values or defining boundary conditions in algorithms.
+
+Wrapper Class Equality:
+Explain the difference between reference equality and value equality for wrapper class objects. Write a program that compares two wrapper class objects for value equality and demonstrates the importance of using equals() instead of == when comparing objects.
+
+Wrapper Classes and Java APIs:
+Describe how wrapper classes are commonly used in various Java APIs. For instance, how do they facilitate working with I/O streams, networking, or GUI components?
+
+String Basics:
+Explain the String class in Java and its characteristics, such as immutability. Discuss why String objects are often used for representing fixed and unchanging text. Provide an example of how to create and manipulate strings in Java.
+
+String Immutability:
+Describe what it means for a String to be immutable and why it is beneficial in terms of safety and performance. Explain the difference between modifying a String object and creating a new String with the modified value.
+
+String Concatenation:
+Compare and contrast the use of the + operator and the concat() method for string concatenation in Java. Discuss their performance implications and when it is better to use one over the other.
+
+StringBuffer vs. StringBuilder:
+Explain the purpose of StringBuffer and StringBuilder classes in Java and how they differ from String. Discuss when it is appropriate to use StringBuffer and when to use StringBuilder. Provide examples to demonstrate their usage.
+
+StringBuilder Performance:
+Discuss the performance benefits of using StringBuilder over traditional string concatenation (using + operator or concat() method) in scenarios where multiple string manipulations are involved. Provide a code example to compare the execution time of both approaches.
+
+String Pool:
+Describe the concept of the string pool in Java. Explain how string literals are stored in the string pool and how it affects memory usage and string comparison.
+
+StringBuffer Synchronization:
+Explain why StringBuffer is considered thread-safe due to its synchronized methods. Discuss the implications of this synchronization in a multi-threaded environment and when synchronization is necessary.
+
+StringBuilder vs. StringBuffer:
+Compare and contrast StringBuilder and StringBuffer in terms of mutability, synchronization, and performance. Discuss the scenarios where each class is more appropriate to use.
+
+String Interning:
+Describe the concept of string interning in Java and how it affects memory management. Provide examples to illustrate how string interning can be used with the intern() method.
+
+String vs. StringBuilder in Loops:
+Discuss the impact of using String concatenation (+ operator or concat()) inside loops compared to using StringBuilder. Explain why using StringBuilder is generally more efficient in loop operations.
+
+Exception Hierarchy:
+Explain the hierarchy of exceptions in Java. Describe the difference between checked exceptions and unchecked exceptions. Provide examples of each type of exception.
+
+Try-Catch Blocks:
+Demonstrate the usage of a try-catch block to handle exceptions in Java. Write a code snippet that attempts to divide two numbers, and in case of an exception (e.g., ArithmeticException), catch the exception and display an appropriate error message.
+
+Multiple Catch Blocks:
+Describe how to handle multiple types of exceptions using multiple catch blocks in Java. Write a program that reads an integer from the user and catches exceptions such as NumberFormatException and InputMismatchException in separate catch blocks.
+
+Custom Exception Classes:
+Design a custom exception class called CustomException that extends the Exception class. Write a program that uses the custom exception class to throw and catch a specific exception in response to a certain condition or error.
+
+Finally Block:
+Explain the purpose of the finally block in exception handling. Write a program that includes a finally block and demonstrate how it executes regardless of whether an exception occurs or not.
+
+Throwing Exceptions:
+Describe how to throw exceptions explicitly in Java using the throw keyword. Write a method that accepts an integer argument and throws an IllegalArgumentException if the argument is negative.
+
+Chained Exceptions:
+Explain the concept of chained exceptions in Java and how they allow you to provide more detailed information about the cause of an exception. Demonstrate how to create and handle chained exceptions.
+
+Exception Propagation:
+Describe how exceptions propagate through method calls in Java. Discuss the difference between checked exceptions and unchecked exceptions in the context of method signatures and exception propagation.
+
+Handling Checked Exceptions:
+Discuss the two ways to handle checked exceptions: using a try-catch block or declaring the exception in the method signature using throws clause. Explain the scenarios where each approach is appropriate.
+
+Exception Handling Best Practices:
+List some best practices for exception handling in Java. Explain how to choose the appropriate exception type, when to catch exceptions, and when to let exceptions propagate up the call stack.
+
+Stream Basics:
+Explain what the Stream API is in Java and its purpose. Discuss the benefits of using streams for processing collections compared to traditional loops.
+
+Creating Streams:
+Describe different ways to create streams in Java. Provide examples of creating streams from arrays, collections, and using the Stream.of() method.
+
+Intermediate and Terminal Operations:
+Differentiate between intermediate and terminal operations in the Stream API. Provide examples of common intermediate operations like filter, map, sorted, and terminal operations like forEach, collect, and reduce.
+
+Stream Pipeline:
+Explain the concept of the stream pipeline, which consists of a source, zero or more intermediate operations, and a terminal operation. Describe how data flows through the pipeline and how intermediate operations are lazily evaluated.
+
+Stream vs. Collection:
+Compare and contrast streams with collections in Java. Discuss the differences in their nature, data structure, and usage scenarios.
+
+Parallel Streams:
+Describe the concept of parallel streams and how they utilize multiple threads for processing data concurrently. Explain the scenarios where using parallel streams can significantly improve performance.
+
+Stream API for Filtering and Transformation:
+Write a program that uses the Stream API to filter a list of integers to keep only even numbers, and then squares each of the remaining numbers. Demonstrate the usage of filter, map, and collect terminal operation to achieve this.
+
+Stream API for Grouping and Aggregation:
+Create a list of Employee objects with properties like department and salary. Write a program to group the employees by department and calculate the average salary for each department using the Stream API.
+
+Infinite Streams:
+Discuss the concept of infinite streams and how to create them using methods like Stream.iterate() and Stream.generate(). Provide examples of using infinite streams in specific scenarios.
+
+Stream Performance Considerations:
+Explain some performance considerations when using the Stream API. Discuss scenarios where streams might not be the most efficient choice and how to handle large data sets with streams.
+
+
+dx
